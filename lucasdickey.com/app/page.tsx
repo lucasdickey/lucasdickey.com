@@ -7,13 +7,8 @@ import {
 } from "../utils/constants";
 
 export default function Home() {
-  // Add console logs to debug
-  console.log("PROFILE_IMAGES:", PROFILE_IMAGES);
-  console.log("PROFILE_NAMES:", PROFILE_NAMES);
-  console.log("PROFILE_TAGLINES:", PROFILE_TAGLINES);
-
-  // Select the profile with id 2 (Lucas Dickey)
-  const profileId = 2;
+  // Randomly select a profile
+  const profileId = Math.floor(Math.random() * PROFILE_IMAGES.length) + 1;
 
   // Use optional chaining and nullish coalescing to handle potential undefined values
   const profileImage =
