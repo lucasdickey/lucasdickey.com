@@ -4,41 +4,43 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-secondary-600 text-dark-600 flex flex-col justify-between p-8">
       <main className="flex flex-col items-center gap-8 max-w-4xl mx-auto">
-        <Image
-          src="/your-image.jpg" // Replace with your actual image path
-          alt="Your Name"
-          width={200}
-          height={200}
-          className="rounded-full border-4 border-primary-600"
-          priority
-        />
+        <div className="relative w-[200px] h-[200px] rounded-lg overflow-hidden border-4 border-primary-600">
+          <Image
+            src="/images/lucas-digital.jpg"
+            alt="Lucas Dickey"
+            width={200}
+            height={200}
+            className="object-cover"
+            priority
+          />
+        </div>
         <h1 className="text-4xl font-bold text-center text-wine-600">
-          Your Name
+          Lucas Dickey
         </h1>
         <h2 className="text-2xl text-center text-accent-600">
-          Your Tagline or Brief Description
+          Apsiring polymath; aspiring to humility; a lot going on up there
         </h2>
         <div className="bg-dark-600 text-secondary-600 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-4">Connect with me:</h3>
           <ul className="space-y-2">
             <li>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/lucasdickey4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary-500 transition-colors"
               >
-                Twitter
+                Twitter: @lucasdickey4
               </a>
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/lucasdickey"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary-500 transition-colors"
               >
-                LinkedIn
+                LinkedIn: @lucasdickey
               </a>
             </li>
             <li>
